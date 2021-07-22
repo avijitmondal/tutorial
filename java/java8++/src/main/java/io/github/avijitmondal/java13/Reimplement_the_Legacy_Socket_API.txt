@@ -1,0 +1,7 @@
+Reimplement the Legacy Socket API – JEP 353
+
+The underlying implementation of the java.net.Socket and java.net.ServerSocket APIs
+have been rewritten. The new implementation, NioSocketImpl, is a drop-in replacement for PlainSocketImpl.
+
+It uses java.util.concurrent locks rather than synchronized methods.
+If you want to use the legacy implementation, use the java option -Djdk.net.usePlainSocketImpl.

@@ -1,0 +1,8 @@
+Dynamic CDS Archive – JEP 350
+
+This JEP extends the class-data sharing feature, which was introduced in Java 10. Now,
+the creation of CDS archive and using it is much easier.
+
+$ java -XX:ArchiveClassesAtExit=my_app_cds.jsa -cp my_app.jar
+
+$ java -XX:SharedArchiveFile=my_app_cds.jsa -cp my_app.jar

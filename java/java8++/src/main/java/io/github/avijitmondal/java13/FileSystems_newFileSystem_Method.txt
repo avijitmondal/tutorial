@@ -1,0 +1,8 @@
+FileSystems.newFileSystem() Method
+
+Three new methods have been added to the FileSystems class to make it easier to use
+file system providers, which treats the contents of a file as a file system.
+
+1. newFileSystem(Path)
+2. newFileSystem(Path, Map<String, ?>)
+3. newFileSystem(Path, Map<String, ?>, ClassLoader)

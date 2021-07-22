@@ -1,0 +1,9 @@
+Shenandoah: A Low-Pause-Time Garbage Collector (Experimental)
+
+RedHat initiated Shenandoah Garbage Collector to reduce GC pause times.
+The idea is to run GC concurrently with the running Java threads.
+
+It aims at consistent and predictable short pauses irrelevant of the heap size.
+So it does not matter if the heap size is 15 MB or 15GB.
+
+It is an experimental feature in Java 12.

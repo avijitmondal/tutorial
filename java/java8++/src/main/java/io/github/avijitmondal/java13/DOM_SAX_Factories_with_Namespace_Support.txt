@@ -1,0 +1,15 @@
+DOM and SAX Factories with Namespace Support
+
+There are new methods to instantiate DOM and SAX factories with Namespace support.
+
+newDefaultNSInstance()
+newNSInstance()
+newNSInstance(String factoryClassName, ClassLoader classLoader)
+
+//java 13 onwards
+DocumentBuilder db = DocumentBuilderFactory.newDefaultNSInstance().newDocumentBuilder();
+
+// before java 13
+DocumentBuilderFactory dbf = DocumentBuilderFactory.newDefaultInstance();
+dbf.setNamespaceAware(true);
+DocumentBuilder db = dbf.newDocumentBuilder();
