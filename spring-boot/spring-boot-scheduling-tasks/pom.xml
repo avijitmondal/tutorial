@@ -8,7 +8,7 @@
         <version>2.3.2.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.avijitmondal.spring.scheduling</groupId>
+    <groupId>com.avijitmondal.spring.boot</groupId>
     <artifactId>spring-boot-scheduling-tasks</artifactId>
     <version>1.0-SNAPSHOT</version>
 
