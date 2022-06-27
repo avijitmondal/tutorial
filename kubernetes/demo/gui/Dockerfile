@@ -17,7 +17,7 @@ RUN npm run build --prod
 FROM nginx:1.19-alpine
 LABEL maintainer="avijitmondal38@gmail.com"
 
-COPY --from=build /app/public /usr/share/nginx/html
+COPY --from=build /app/build/ /usr/share/nginx/html
 COPY --from=build /app/nginx/conf.d/default.conf /etc/nginx/conf.d/default.conf
 
 EXPOSE 80

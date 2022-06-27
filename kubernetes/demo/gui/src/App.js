@@ -22,7 +22,7 @@ class App extends Component {
 
 
   componentDidMount() {
-    axios.get('http://localhost:8080/api/details').then((response) => {
+    axios.get('http://backend-app-backend-service:8080/api/details').then((response) => {
       this.setState({ appDetails: response.data })
     })
   };

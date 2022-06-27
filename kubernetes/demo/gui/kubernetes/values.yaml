@@ -4,7 +4,7 @@ revisionHistoryLimit: 0
 image:
   repository: avijit/app-gui
   pullPolicy: IfNotPresent
-  tag: "" # Overrides the image tag whose default is the chart appVersion.
+  tag: "1.0" # Overrides the image tag whose default is the chart appVersion.
 
 imagePullSecrets: []
 nameOverride: ""

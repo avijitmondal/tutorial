@@ -1,5 +1,16 @@
 # app details
 
+Run this application as standalone application
+
+Requirements
+1. Python3
+2. Pip3
+```
+pip3 install flask
+python3 app.py
+```
+open http://localhost:5001 or http://localhost:5001/details
+
 Steps to run this application on kubernetes cluster
 
 Create docker image
@@ -11,7 +22,7 @@ docker build . -t app-details:1.0
 to run this application as a standalone docker container
 
 `
-docker run -p 5000:5000 app-details:1.0
+docker run -p 5001:5001 app-details:1.0
 `
 
 to run this application as a standalone pod
@@ -41,7 +52,7 @@ kubectl apply -f kubernetes\app-details-deploy.yaml
 to create a new namespace
 
 `
-kubectl apply -f kubernetes\app-details-ns.yaml
+kubectl apply -f kubernetes\app-details-namespace.yaml
 `
 
 to expose this application to outside cluster

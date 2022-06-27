@@ -44,5 +44,5 @@ def error():
 
 if __name__ == '__main__':
     # Bind to APP_PORT if defined, otherwise default to 5000.
-    APP_PORT = int(os.environ.get('APP_PORT', 5000))
+    APP_PORT = int(os.environ.get('APP_PORT', 5001))
     app.run(host='0.0.0.0', port=APP_PORT)

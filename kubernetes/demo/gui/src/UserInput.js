@@ -16,14 +16,14 @@ export default function UserInput() {
     function fetchUsers() {
         if (id != null && id >= 10000 && id <= 20000) {
             try {
-                restCall('http://localhost:8080/api/users?id=' + id);
+                restCall('http://backend-app-backend-service:8080/api/users?id=' + id);
                 console.log(users);
             } catch (e) {
                 console.log(e);
             }
         } else if (name != null && name.length === 0) {
             try {
-                restCall('http://localhost:8080/api/users?name=' + name);
+                restCall('http://backend-app-backend-service:8080/api/users?name=' + name);
                 console.log(users);
             } catch (e) {
                 console.log(e);

@@ -15,7 +15,7 @@ spec:
        - name: app-details
          image: avijit/app-details:1.0
          ports:
-          - containerPort: 5000
+          - containerPort: 5001
          resources:
            limits:          #not overriding default requested resources
              cpu: "1"         #default value requested is 0.5 CPU

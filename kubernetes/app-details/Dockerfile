@@ -7,5 +7,6 @@ RUN pip3 install --no-cache-dir --upgrade pip && \
 WORKDIR /app
 ADD static static
 ADD app.py app.py
+EXPOSE 5001
 
 ENTRYPOINT ["python3","app.py"]

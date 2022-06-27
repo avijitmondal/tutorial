@@ -2,9 +2,9 @@ replicaCount: 1
 revisionHistoryLimit: 0
 
 image:
-  repository: docker.pkg.github.com/avijitmondal/kubernetes-tutorial/app-backend
+  repository: avijit/app-backend
   pullPolicy: IfNotPresent
-  tag: ""   # Overrides the image tag whose default is the chart appVersion.
+  tag: "1.0"   # Overrides the image tag whose default is the chart appVersion.
 
 imagePullSecrets: []
 nameOverride: ""
@@ -37,10 +37,10 @@ service:
 config:
   remoteDb:
     enabled: false
-    mysqlDbUrl: mysql-service:3306
+    mysqlDbUrl: mysql-service
     mysqlDbName: tutorial
     mysqlDbRootPassword: cGFzc3dvcmQ=
-  profile: default
+  profile: prod
 
 ingress:
   enabled: false

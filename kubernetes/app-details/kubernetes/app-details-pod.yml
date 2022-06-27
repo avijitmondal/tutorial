@@ -9,4 +9,4 @@ spec:
     - name: app-details
       image: avijit/app-details:1.0
       ports:
-        - containerPort: 5000
+        - containerPort: 5001
